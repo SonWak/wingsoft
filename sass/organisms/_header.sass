@@ -1,0 +1,78 @@
+
+header
+  +clearfix
+  min-height: 388px
+  +breakpoint($celular)
+    min-height: 340px
+  background:
+    image: url('../images/topo-bg.jpg')
+    position: top center
+    repeat: no-repeat
+    color: $preto
+    attachment: fixed
+
+  .logo
+      float: left
+
+  .links
+      float: right
+      margin: 40px 0 0 0
+
+      nav,
+      .social
+          display: inline-block
+      nav
+        @include breakpoint($tablet)
+          display: none
+        @include breakpoint($celular)
+          display:none
+        ul
+          li
+            display: inline-block
+            margin: 0 20px 0 0
+            a
+              color: $branco
+              text-transform: uppercase
+
+      .social
+          li
+            display: inline-block
+            margin: 0 10px 0 0
+            a
+              color: $branco
+              display: block
+              border: 1px solid $branco
+              padding: 4px
+              width: 25px
+              height: 25px
+              line-height: 12px
+              text-align: center
+              +border-radius(120px)
+              text-transform: uppercase
+              &:hover,
+              &:focus
+                border-color: $branco
+                background: $branco
+                color: $preto
+
+  strong
+    +breakpoint($tablet)
+      +font-size(38px)
+    +breakpoint($celular)
+      +font-size(34px)
+
+  h1
+    font-family: 'Open Sans'
+    font-weight: $light
+    text-transform: uppercase
+    clear: both
+    color: $branco
+    margin: 180px auto 30px auto !important
+    border: 2px solid $branco
+    padding: 20px
+    text-align: center
+    display: table
+    +breakpoint($tablet)
+      +font-size(38px)
+    +breakpoint($celular)
+      +font-size(34px)

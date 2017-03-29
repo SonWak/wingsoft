@@ -1,0 +1,34 @@
+.window-blue
+  +clearfix
+  height: $window
+  padding: 100px 0 100px 0
+  background:
+    image: url('../images/web-bg.jpg')
+    position: center
+    repeat: no-repeat
+    color: $azul
+    size: cover
+    attachment: fixed
+  +breakpoint($celular)
+    padding: 60px 0 60px 0
+
+.window-white
+  +clearfix
+  height: $window
+  padding: 70px 0 100px 0
+  +breakpoint($celular)
+    padding: 60px 0 60px 0
+
+.window-red
+  +clearfix
+  height: $window
+  padding: 100px 0 100px 0
+  background:
+    image: url('../images/redes-bg.jpg')
+    position: center
+    repeat: no-repeat
+    color: $vermelho
+    size: cover
+    attachment: fixed
+  +breakpoint($celular)
+    padding: 60px 0 60px 0

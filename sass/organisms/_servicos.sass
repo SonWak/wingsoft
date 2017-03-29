@@ -1,0 +1,159 @@
+section.servicos
+  .items
+    +flexbox
+    +align-items(center)
+    +justify-content(space-around)
+    padding: 50px 0 100px 0
+    //text-align: center
+    +breakpoint($tablet)
+      padding: 40px 0 90px 0
+    +breakpoint($celular)
+      padding: 15px 0 70px 0
+
+    [class^="icon-"]
+      width: 180px
+      height: 180px
+      background: $preto
+      color: $branco
+      +border-radius(120px)
+      text-align: center
+      line-height: 180px
+      +font-size(150px)
+      +breakpoint($tablet)
+        width: 120px
+        height: 120px
+        line-height: 125px
+        +font-size(110px)
+      +breakpoint($celular)
+        width: 75px
+        height: 75px
+        line-height: 78px
+        +font-size(60px)
+      &.icon-codigo
+        +order(1)
+      &.icon-hands
+        +order(2)
+      &.icon-hardware
+        +order(3)
+      &.icon-engrenagens
+        +order(4)
+
+  [class^="iconb-"]
+    +flexbox
+    float: inherit
+    margin: 0 auto
+    width: 180px
+    height: 180px
+    +border-radius(120px)
+    +font-size(150px)
+    &.iconb-code
+      background: $branco
+      color: $azul
+      padding: 40px
+      +breakpoint($tablet)
+        padding: 32px
+      +breakpoint($celular)
+        padding: 26px
+    &.iconb-hands
+      background: $azul
+      color: $branco
+      padding: 40px 30px 40px 30px
+      +breakpoint($tablet)
+        padding: 35px 0 0 25px
+      +breakpoint($celular)
+        padding: 30px 0 0 21px
+    &.iconb-chip
+      background: $branco
+      color: $vermelho
+      padding: 45px 50px 40px 50px
+      +breakpoint($tablet)
+        padding: 37px 0 0 40px
+      +breakpoint($celular)
+        padding: 30px 0 0 33px
+    &.iconb-gears
+      background: $vermelho
+      color: $branco
+      padding: 45px 50px 40px 35px
+      +breakpoint($tablet)
+        padding: 36px 0 0 28px
+      +breakpoint($celular)
+        padding: 30px 0 0 22px
+    +breakpoint($tablet)
+      width: 150px
+      height: 150px
+      +font-size(130px)
+    +breakpoint($celular)
+      width: 120px
+      height: 120px
+      +font-size(100px)
+
+  .titulo
+    text-align: center
+    color: $preto
+    padding: 40px 0 0
+    +breakpoint($celular)
+      padding: 25px 0 0
+    h3
+      font-family: 'Open Sans'
+      font-weight: $regular
+      padding-top: 15px
+      +breakpoint($celular)
+        font-size: 20px
+    p
+      font-family: 'Open Sans'
+      font-weight: $light
+      font-size: 18px
+      +breakpoint($celular)
+        font-size: 16px
+
+  .texto
+    font-family: 'Open Sans', sans-serif
+    font-weight: $regular
+    font-size: 16px
+    float: inherit
+    margin: 0 auto
+    text-align: center
+    color: $preto
+    h3
+      font-weight: $bold
+    strong
+      font-size: 15px
+    .italic
+      font-family: 'Open Sans', sans-serif
+      font-weight: $light
+    .botao-preto-azul
+      display: table
+      margin: 0 auto
+    .botao-preto-vermelho
+      display: table
+      margin: 0 auto
+    +breakpoint($tablet)
+      font-size: 15px
+    +breakpoint($celular)
+      font-size: 14px
+
+  .texto-branco
+    font-family: 'Open Sans'
+    font-weight: $regular
+    text-align: center
+    font-size: 16px
+    margin: 0 auto
+    float: inherit
+    color: $branco
+    h3
+      font-weight: $bold
+    strong
+      font-size: 15px
+    .italic
+      font-family: 'Open Sans', sans-serif
+      font-weight: $light
+    .botao-branco-azul
+      display: table
+      margin: 0 auto
+    .botao-branco-vermelho
+      display: table
+      margin: 0 auto
+    +breakpoint($tablet)
+      font-size: 15px
+    +breakpoint($celular)
+      font-size: 14px
