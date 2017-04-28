@@ -5,3 +5,9 @@ section.empresa
     float: left
     margin: 0 auto
     width: 42%
+    +breakpoint($tablet)
+      //float: inherit
+      width: 50%
+    +breakpoint($celular)
+      width: 80%
+      float: inherit
