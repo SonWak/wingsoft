@@ -1,16 +1,18 @@
 section.empresa
   .monitor
     +flexbox
-    +justify-content(center)
     float: left
     margin: 0 auto
+    display: block
+    clear: both
     width: 450px
-    height: 417px
     +breakpoint($tablet)
       width: 400px
-      height: 370px
     +breakpoint($mintablet)
       float: inherit
     +breakpoint($celular)
-      width: 340px
-      height: 315px
+      width: 90%
+
+  .img
+    width: 100%
+    height: 100%
