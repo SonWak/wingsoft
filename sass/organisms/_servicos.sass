@@ -4,7 +4,6 @@ section.servicos
     +align-items(center)
     +justify-content(space-around)
     padding: 50px 0 100px 0
-    //text-align: center
     +breakpoint($tablet)
       padding: 40px 0 90px 0
     +breakpoint($celular)
@@ -38,51 +37,110 @@ section.servicos
       &.icon-engrenagens
         +order(4)
 
-  [class^="iconb-"]
+  .iconb-code
     +flexbox
-    float: inherit
-    margin: 0 auto
+    float: right
+    margin: 40px 0 0 30px
     width: 180px
     height: 180px
     +border-radius(120px)
     +font-size(150px)
-    &.iconb-code
-      background: $branco
-      color: $azul
-      padding: 40px
-      +breakpoint($tablet)
-        padding: 32px
-      +breakpoint($celular)
-        padding: 26px
-    &.iconb-hands
-      background: $azul
-      color: $branco
-      padding: 40px 30px 40px 30px
-      +breakpoint($tablet)
-        padding: 35px 0 0 25px
-      +breakpoint($celular)
-        padding: 30px 0 0 21px
-    &.iconb-chip
-      background: $branco
-      color: $vermelho
-      padding: 45px 50px 40px 50px
-      +breakpoint($tablet)
-        padding: 37px 0 0 40px
-      +breakpoint($celular)
-        padding: 30px 0 0 33px
-    &.iconb-gears
-      background: $vermelho
-      color: $branco
-      padding: 45px 50px 40px 35px
-      +breakpoint($tablet)
-        padding: 36px 0 0 28px
-      +breakpoint($celular)
-        padding: 30px 0 0 22px
+    background: $branco
+    color: $azul
+    padding: 40px
     +breakpoint($tablet)
       width: 150px
       height: 150px
       +font-size(130px)
+      padding: 32px
+      float: inherit
+      margin: 0 auto
     +breakpoint($celular)
       width: 120px
       height: 120px
       +font-size(100px)
+      padding: 26px
+      float: inherit
+      margin: 0 auto
+
+
+  .iconb-hands
+    +flexbox
+    float: left
+    margin: 0 auto
+    margin: 70px 0 0
+    width: 180px
+    height: 180px
+    +border-radius(120px)
+    +font-size(150px)
+    background: $azul
+    color: $branco
+    padding: 40px 30px 40px 30px
+    +breakpoint($tablet)
+      width: 150px
+      height: 150px
+      +font-size(130px)
+      padding: 35px 0 0 25px
+      float: inherit
+      margin: 0 auto
+    +breakpoint($celular)
+      width: 120px
+      height: 120px
+      +font-size(100px)
+      padding: 30px 0 0 21px
+      float: inherit
+      margin: 0 auto
+
+  .iconb-chip
+    +flexbox
+    float: right
+    margin: 0 auto
+    margin: 60px 0 0
+    width: 180px
+    height: 180px
+    +border-radius(120px)
+    +font-size(150px)
+    background: $branco
+    color: $vermelho
+    padding: 45px 50px 40px 50px
+    +breakpoint($tablet)
+      width: 150px
+      height: 150px
+      +font-size(130px)
+      padding: 37px 0 0 40px
+      float: inherit
+      margin: 0 auto
+    +breakpoint($celular)
+      width: 120px
+      height: 120px
+      +font-size(100px)
+      padding: 30px 0 0 33px
+      float: inherit
+      margin: 0 auto
+
+  .iconb-gears
+    +flexbox
+    float: left
+    margin: 0 auto
+    margin: 70px 0 0
+    width: 180px
+    height: 180px
+    +border-radius(120px)
+    +font-size(150px)
+    background: $vermelho
+    color: $branco
+    padding: 45px 50px 40px 35px
+    +breakpoint($tablet)
+      width: 150px
+      height: 150px
+      +font-size(130px)
+      padding: 36px 0 0 28px
+      float: inherit
+      margin: 0 auto
+    +breakpoint($celular)
+      width: 120px
+      height: 120px
+      +font-size(100px)
+      padding: 30px 0 0 22px
+      float: inherit
+      margin: 0 auto
